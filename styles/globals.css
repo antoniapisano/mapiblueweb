@@ -9,7 +9,10 @@ body {
   padding: 0;
 }
 
-
+h1 {
+  padding: none;
+  margin: none;
+}
 
 .Navbar {
   height: 60px;
@@ -19,12 +22,6 @@ body {
   background: black;
 }
 
-.Navbar > .nav-logo {
-  font-weight: 700;
-  font-size: 21px;
-  margin: 15px;
-  color: #ffffff;
-}
 
 .Navbar > .nav-items > a {
   color: #ffffff;
@@ -60,10 +57,14 @@ body {
 
 .page-container {
   position: relative;
+  margin: 0%;
+  padding: 0%;
   min-height: 100vh;
 }
 
 .content-wrap {
+  margin: none;
+  padding-top: none;
   padding-bottom: 2.5rem;   
 }
 

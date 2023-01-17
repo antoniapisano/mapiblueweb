@@ -1,8 +1,8 @@
 import '../styles/globals.css'
 import Layout from './components/layout'
-import { SixCaps } from '@next/font/google'
+import { Six_Caps } from '@next/font/google'
 
-const sixcaps = SixCaps({ subsets: ['latin'] })
+const sixcaps = Six_Caps({ subsets: ['latin'], weight: ['400'] })
 
 function MyApp({ Component, pageProps }) {
   return (
