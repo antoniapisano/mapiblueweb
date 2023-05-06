@@ -7,11 +7,18 @@ const sixcaps = Six_Caps({ subsets: ['latin'], weight: ['400'] })
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className={sixcaps.className}>
+    <>
+    <main>
+    <style jsx global>{`
+      html {
+        font-family: ${sixcaps.style.fontFamily};
+      }
+    `}</style>
     <Layout>
       <Component {...pageProps} />
     </Layout>
     </main>
+    </>
   )
 }
 
