@@ -10,13 +10,12 @@ export default function Home() {
       zIndex: -1,
       position: "fixed",
       width: "100vw",
-      height: "100vh"
+      height: "100vh",
     }}>
       <Image 
         src="/guitarbackground1.webp"
         alt="Guitar background by Shinnosuke Kawabe https://unsplash.com/photos/idya-9U4ZJM"
-        layout="fill"
-        objectFit='cover'
+        fill cover
       />
     </div>
     <div className={styles.container}>
