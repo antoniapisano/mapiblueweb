@@ -1,12 +1,13 @@
 import Link from "next/link";
 import React, {useState} from "react";
+import TwitterIcon from "/public/twitter-svgrepo-com.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="Navbar">
       <div className={`nav-items ${isOpen && "open"}`}>
-        <Link href="/home">Home</Link>
+         <TwitterIcon color="green" />
         <Link href="/about">About</Link>
         <Link href="/shop">Shop</Link>
       </div>

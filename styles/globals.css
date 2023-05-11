@@ -15,6 +15,10 @@ h1 {
   margin: none;
 }
 
+svg {
+  fill: green;
+}
+
 .Navbar {
   height: 60px;
   display: flex;
