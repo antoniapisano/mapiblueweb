@@ -16,21 +16,28 @@ h1 {
 }
 
 svg {
-  fill: green;
+  fill: cyan;
 }
 
 .Navbar {
   height: 60px;
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  flex-direction: column;
+  overflow: hidden;
   align-items: center;
   background: black;
 }
 
 
 .Navbar > .nav-items > a {
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  float: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 40px;
   text-decoration: none;
   margin: 15px;
   position: relative;
