@@ -11,9 +11,10 @@ export default function Home() {
       position: "fixed",
       width: "100vw",
       height: "100vh",
+      opacity: "65%"
     }}>
       <Image 
-        src="/guitarbackground1.webp"
+        src="/Guitarbackground2.webp"
         alt="Guitar background by Shinnosuke Kawabe https://unsplash.com/photos/idya-9U4ZJM"
         fill cover
       />
@@ -22,8 +23,23 @@ export default function Home() {
       <Head>
         <title>James Evans Official Website UK Blues Artist</title>
       </Head>
-      <h1 className={styles.thistitle}>James Evans</h1>
+      
+      <div style={{
+      display: "flex",
+      padding: "none",
+      margin: "none",
+      position: "fixed",
+      width: "100vw",
+      height: "100vh",
+    }}>
+      <h1 className={styles.thistitle}>James<br />Evans</h1>
       <YoutubeEmbed embedId="Hy4qV0tpI8M" />
+
+      </div>
+    
+      
+      
+
 
       
     </div>

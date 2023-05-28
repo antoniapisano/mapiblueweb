@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, {useState} from "react";
 import YoutubeIcon from "/public/youtubeplay.svg";
-import InstagramIcon from "/public/instagramcoloured.svg";
+import InstagramIcon from "/public/instagram2.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,9 +1,9 @@
 import '../styles/globals.css'
 import Layout from './components/layout'
-import { Six_Caps } from '@next/font/google'
+import { Righteous } from '@next/font/google'
 
 
-const sixcaps = Six_Caps({ subsets: ['latin'], weight: ['400'] })
+const righteous = Righteous({ subsets: ['latin'], weight: ['400'] })
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
     <main>
     <style jsx global>{`
       html {
-        font-family: ${sixcaps.style.fontFamily};
+        font-family: ${righteous.style.fontFamily};
       }
     `}</style>
     <Layout>
