@@ -1,19 +1,14 @@
 import '../styles/globals.css'
 import Layout from './components/layout'
-import { Righteous } from '@next/font/google'
+import { Staatliches } from '@next/font/google'
 
 
-const righteous = Righteous({ subsets: ['latin'], weight: ['400'] })
+const righteous = Staatliches({ subsets: ['latin'], weight: ['400'], display: 'swap'})
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-    <main>
-    <style jsx global>{`
-      html {
-        font-family: ${righteous.style.fontFamily};
-      }
-    `}</style>
+    <main className={righteous.className}>
     <Layout>
       <Component {...pageProps} />
     </Layout>

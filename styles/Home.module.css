@@ -1,8 +1,8 @@
 .videoresponsive {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
     margin-top: 5vh;
     padding: 1%;
     
@@ -21,3 +21,31 @@
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+
+  .thistitle {
+    font-size: 250px;
+    overflow: scroll;
+    position: relative;
+    display: flex;
+    margin: none;
+    color: darkslateblue;
+    font-weight: lighter;
+    margin: 2vw;
+  width: 40%;
+  padding: none;
+  text-align: center;
+
+}
+
+.videoresponsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 5vh;
+  padding: 1%;
+  
+}
+
+}

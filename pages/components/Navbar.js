@@ -1,15 +1,19 @@
 import Link from "next/link";
 import React, {useState} from "react";
-import YoutubeIcon from "/public/youtubeplay.svg";
-import InstagramIcon from "/public/instagram2.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="Navbar">
       <div className={`nav-items ${isOpen && "open"}`}>
-         <YoutubeIcon/><Link href="/about">Youtube</Link>
-        <InstagramIcon /><Link href="/shop">Instagram</Link>
+        <ul>
+          <li>
+        <Link href="/about">Youtube</Link>
+        </li>
+        <li>
+        <Link href="/shop">Instagram</Link>
+        </li>
+        </ul>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}

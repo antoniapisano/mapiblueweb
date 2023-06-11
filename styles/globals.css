@@ -15,6 +15,8 @@ h1 {
   margin: none;
 }
 
+
+
 svg {
   fill: cyan;
 }
@@ -22,12 +24,29 @@ svg {
 .Navbar {
   height: 60px;
   display: flex;
+  list-style-type: none;
   justify-content: space-between;
   margin: auto;
   flex-direction: column;
   overflow: hidden;
   align-items: center;
-  background: darkslategrey;
+  background: lightgray;
+}
+
+.Navbar li {
+  font-size: 1.5em;
+  list-style-type: none;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 60px;
+}
+
+.Navbar li a {
+  color: darkslateblue;
+  font-style: normal;
+  text-decoration: none;
 }
 
 
@@ -38,7 +57,6 @@ svg {
   position: absolute;
   float: none;
   color: cyan;
-  font-size: 30px;
   text-decoration: none;
   margin: 15px;
   position: relative;
@@ -85,20 +103,44 @@ svg {
   bottom: 0;
   width: 100%;
   height: 2.5rem;  
-  background-color: darkslategrey;
-  color: darkcyan;          
+  background-color: darkslateblue;
+  color: lightgrey; 
+  font-size: 2vh;         
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 700px) {
+
+  .Navbar {
+    display: block;
+    flex-direction: column;
+  }
+
+  .Navbar li {
+    font-size: 4.5em;
+    list-style-type: none;
+    display: block;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
   .Navbar > .nav-items {
     position: absolute;
+    z-index: 10;
     top: 60px;
-    display: flex;
+    display: block;
     flex-direction: column;
-    background: black;
+    background: lightgrey;
+    background-color: lightgrey;
+    align-items: left;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 66%;
+    height: 66%;
     transform: translateX(-100%);
     transition: all .45s;
   }
@@ -113,12 +155,11 @@ svg {
 
   .Navbar > .nav-toggle {
     display: flex;
+    margin-right: auto;
     width: 50px;
-    margin: none;
-    padding: none;
     height: 50px;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
   }
 
@@ -126,7 +167,7 @@ svg {
     position: relative;
     width: 32px;
     height: 2px;
-    background: #ffffff;
+    background: darkslateblue;
     transition: all 0.45s ease-in-out;
   }
 
@@ -135,7 +176,7 @@ svg {
     content: "";
     position: absolute;
     height: 2px;
-    background: #ffffff;
+    background:darkslateblue;
     border-radius: 2px;
     transition: all 0.45s ease-in-out;
   }
