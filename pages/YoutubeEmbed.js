@@ -8,6 +8,8 @@ const YoutubeEmbed = ({ embedId }) => (
       width="800px"
       height="500px"
       position="relative"
+      padding="none"
+      margin="none"
       flex-direction="column"
       src={`https://www.youtube.com/embed/${embedId}`}
       frameBorder="0"
