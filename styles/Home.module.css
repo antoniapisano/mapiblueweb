@@ -1,30 +1,39 @@
 .gridcontainer {
-  display: flex;
-  padding: none;
-  margin: none;
-  width: 100vw;
-  height: 100vh;
-  align-items: stretch
+  display: grid;
+  width: 100%;
+  height: 100%;
+  gap: 2%;
+  grid-template-areas:
+    "a b";
+    grid-template-columns: 1fr 1fr;
 }
 
 .headcontainer {
-  padding: none;
-  margin: none;
+  padding: 0%;
+  margin: 0%;
+  grid-area: a;
 }
 
 .youtubecontainer {
-  padding: none;
-  margin: none;
+  display: flex;
+  padding-bottom: 10%;
+  width: 100%;
+  height: 100%;
+  grid-area: b;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .videoresponsive {
-    display: inline-block;
-    margin-left: 25vh;
-    margin-right: 25vh;
+    display: flex;
     width: 100%;
-    margin-top: 5vh;
-    padding: none;
-    
+    height: 100%;
+    padding: 0%;
+}
+
+.ytp-cued-thumbnail-overlay-image {
+  width: 100%;
+  height: 100%;
 }
 
 .thistitle {
@@ -40,6 +49,7 @@
   text-align: center;
 }
 
+
 @media (max-width: 700px) {
 
   .page-container {
@@ -54,33 +64,46 @@
 
   .gridcontainer {
     display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 2%;
     grid-template-areas:
     "a"
     "b";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .headcontainer {
-    grid-area: "a";
-    margin-left: 15vh;
-    margin-right:10vh;
+    grid-area: a;
+    align-items: center;
   }
 
   .youtubecontainer {
-    grid-area: "b";
-    align-items:stretch;
+    display: flex;
+  padding-bottom: 10%;
+  width: 100%;
+  height: 100%;
+  grid-area: b;
+  padding-right: 5%;
+  padding-left: 5%;
   }
 
 
 .videoresponsive {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  margin-top: 5vh;
-  padding: 1%;
-  grid-gap: 10px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0%;
   
 }
+
+.ytp-cued-thumbnail-overlay-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
 
 .thistitle {
   font-size: 200px;
@@ -88,11 +111,15 @@
   display: flex;
   color: darkslateblue;
   font-weight: lighter;
-  margin: 2vw;
-  width: 40%;
-  padding: none;
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 5vh;
+  padding: 1%;
+  grid-gap: 10px;
 }
+
 
 }
 

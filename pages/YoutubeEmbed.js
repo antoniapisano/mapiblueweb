@@ -5,12 +5,6 @@ import styles from '../styles/Home.module.css'
 const YoutubeEmbed = ({ embedId }) => (
     <iframe
     className={styles.videoresponsive}
-      width="800px"
-      height="500px"
-      position="relative"
-      padding="none"
-      margin="none"
-      flex-direction="column"
       src={`https://www.youtube.com/embed/${embedId}`}
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

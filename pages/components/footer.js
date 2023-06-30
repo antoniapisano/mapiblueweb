@@ -4,7 +4,12 @@ import InstagramIcon from "/public/instagram2.svg";
 const Footer = () => {
     return ( 
         <div className="Footer">
-        <p>© Antonia Pisano </p>
+            <ul>
+                <li>© Antonia Pisano</li>
+                    <li><YoutubeIcon /></li>
+                        <li><InstagramIcon /></li>
+            </ul>
+        
     </div>
     );
 }

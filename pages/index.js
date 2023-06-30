@@ -1,19 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import YoutubeEmbed from './YoutubeEmbed'
 
 export default function Home() {
   return (
-    <>
-     
-    <div className="backgroundimage">
-      <Image 
-        src="/Guitarbackground2.webp"
-        alt="Guitar background by Shinnosuke Kawabe https://unsplash.com/photos/idya-9U4ZJM"
-        fill cover
-      />
-    </div>
     
     <div className={styles.container}>
       <Head>
@@ -36,6 +26,6 @@ export default function Home() {
 
       
     </div>
-    </>
+    
   )
 }
