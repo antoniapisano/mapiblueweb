@@ -130,8 +130,7 @@ svg {
   height: 2.5rem;  
   background-color: darkslateblue;
   color: lightgrey; 
-  font-size: 1.5vh;  
-  padding: 0.25vh;       
+  font-size: 1vh;      
 }
 
 .Footer li {
@@ -144,13 +143,41 @@ padding: 0 20px;
 position: relative;
 }
 
+@media (max-width: 1020px) {
 
-@media (max-width: 700px) {
+
+  .Footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+    background-color: darkslateblue;
+    color: lightgrey; 
+    font-size: 1vh;      
+  }
+
+  .Footer li {
+    font-size: 0.5em;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+    display: inline-flex;
+    padding: 0 0.5em;
+    position: relative;
+    }
+
+}
+
+
+@media (max-width: 819px) {
 
   .page-container {
+    display: block;
     overflow-y: scroll;
-  
   }
+
+
   
   .content-wrap {
     margin: none;
@@ -254,14 +281,30 @@ position: relative;
 
   .Footer {
     position: fixed;
+    text-align: center;
+    display: flex;
     bottom: 0;
     width: 100%;
     height: 2.5rem;  
     background-color: darkslateblue;
     color: lightgrey; 
     font-size: 2vh;    
+    margin: auto 0;
 
   }
+
+  .Footer li {
+    position: relative;
+    display: flex;
+    font-size: 0.5em;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+    display: inline-flex;
+    padding: 0 1em;
+    }
+
+
 
   .backgroundimage {
     position: fixed;
@@ -269,5 +312,41 @@ position: relative;
     padding-top: 60px;
   }
 
+
+}
+
+@media (max-width: 550px) {
+
+
+  .Navbar li {
+    font-size:3em;
+    text-align: center;
+    list-style-type: none;
+    display: block;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .Navbar ul {
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .Navbar > .nav-items {
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    display: block;
+    flex-direction: column;
+    background: lightgrey;
+    align-items: left;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    transform: translateX(-100%);
+    transition: all .45s;
+  }
 
 }
