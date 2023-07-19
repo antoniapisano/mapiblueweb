@@ -17,13 +17,6 @@ h1 {
 }
 
 
-
-svg {
-  fill: lightgrey;
-  display: inline-flex;
-  align-self: center;
-}
-
 .backgroundimage{
   z-index: -1;
   position: absolute;
@@ -76,7 +69,7 @@ svg {
   transition: color 500ms;
 }
 
-.Navbar li a:hover {
+.Navbar li > a:hover {
   color: cyan;
 }
 
@@ -130,18 +123,27 @@ svg {
   height: 2.5rem;  
   background-color: darkslateblue;
   color: lightgrey; 
-  font-size: 1vh;      
+  font-size: 0.5vh;   
+  list-style-type: none;   
 }
 
 .Footer li {
-font-size: 1.5em;
+font-size: 2.5em;
 list-style-type: none;
 justify-content: space-between;
 text-align: center;
 display: inline-flex;
 padding: 0 20px;
 position: relative;
+color: lightgrey;
 }
+
+svg {
+  fill: lightgrey;
+  display: inline-flex;
+  align-self: center;
+}
+
 
 @media (max-width: 1020px) {
 
@@ -154,11 +156,11 @@ position: relative;
     height: 2.5rem;  
     background-color: darkslateblue;
     color: lightgrey; 
-    font-size: 1vh;      
+    font-size: 0.5em;      
   }
 
   .Footer li {
-    font-size: 0.5em;
+    font-size: 1.5em;
     list-style-type: none;
     justify-content: space-between;
     text-align: center;
