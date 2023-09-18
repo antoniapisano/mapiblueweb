@@ -9,7 +9,8 @@ const Layout = ({ children }) => {
       <Image 
         src="/Guitarbackground2.webp"
         alt="Guitar background by Shinnosuke Kawabe https://unsplash.com/photos/idya-9U4ZJM"
-        fill cover
+        fill
+        style={{objectFit:"cover"}}
       />
     </div>
    <div className="content-wrap">
