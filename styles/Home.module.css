@@ -47,7 +47,7 @@
     position: relative;
     display: flex;
     margin: 0%;
-    color: darkslateblue;
+    color: black;
     font-weight: lighter;
     margin: 2vw;
   width: 40%;
@@ -63,7 +63,7 @@
       position: relative;
       display: flex;
       margin: 0%;
-      color: darkslateblue;
+      color: black;
       font-weight: lighter;
       margin: 2vw;
     width: 40%;
@@ -124,7 +124,7 @@
   font-size: 200px;
   position: relative;
   display: flex;
-  color: darkslateblue;
+  color: black;
   font-weight: lighter;
   display: block;
   margin-left: auto;
@@ -144,7 +144,7 @@
     font-size: 9em;
     position: relative;
     display: flex;
-    color: darkslateblue;
+    color: black;
     font-weight: lighter;
     display: block;
     margin-left: auto;
@@ -163,7 +163,7 @@
     font-size: 6em;
     position: relative;
     display: flex;
-    color: darkslateblue;
+    color: black;
     font-weight: lighter;
     display: block;
     margin-left: auto;

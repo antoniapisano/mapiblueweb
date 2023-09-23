@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <div className="backgroundimage">
       <Image 
         src="/Guitarbackground2.webp"
-        alt="Guitar background by Shinnosuke Kawabe https://unsplash.com/photos/idya-9U4ZJM"
+        alt="DekoArt-Gallery https://pixabay.com/illustrations/guitar-instrument-music-1940733/"
         fill
         style={{objectFit:"cover"}}
       />
