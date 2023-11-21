@@ -1,9 +1,9 @@
 import '../styles/globals.css'
 import Layout from './components/layout'
-import { Staatliches } from '@next/font/google'
+import { Berkshire_Swash } from '@next/font/google'
 
 
-const righteous = Staatliches({ subsets: ['latin'], weight: ['400'], display: 'swap'})
+const righteous = Berkshire_Swash({ subsets: ['latin'], weight: ['400'], display: 'swap'})
 
 function MyApp({ Component, pageProps }) {
   return (

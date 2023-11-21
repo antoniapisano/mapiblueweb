@@ -7,10 +7,10 @@ const Navbar = () => {
       <div className={`nav-items ${isOpen && "open"}`}>
         <ul>
           <li>
-        <a href="https://www.youtube.com/@jamesevansmusic231">Youtube</a>
+        <a>English</a>
         </li>
         <li>
-        <a href="https://www.instagram.com/james_evans_music/?hl=en">Instagram</a>
+        <a>Español</a>
         </li>
         </ul>
       </div>
