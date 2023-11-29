@@ -17,14 +17,7 @@ h1 {
 }
 
 
-.backgroundimage{
-  z-index: -1;
-  position: absolute;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 65%;
-}
+
 
 .page-container {
   position: relative;
@@ -41,7 +34,7 @@ h1 {
 }
 
 .Navbar {
-  height: 60px;
+  height: 70px;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
@@ -53,7 +46,7 @@ h1 {
 }
 
 .Navbar li {
-  font-size: 1.5em;
+  font-size: 2.5em;
   list-style-type: none;
   display: inline-block;
   justify-content: space-between;
@@ -70,7 +63,7 @@ h1 {
 }
 
 .Navbar li > a:hover {
-  color: blue;
+  color: gold;
 }
 
 
@@ -304,14 +297,6 @@ svg {
 
 
 
-    .backgroundimage {
-      background-size: cover;
-      width: 100%;
-      display: block;
-      position: fixed;
-      overflow: visible;
-    }
-
 }
 
 @media (max-width: 550px) {
@@ -361,11 +346,4 @@ svg {
     overflow-y: scroll;
   }
 
-  .backgroundimage {
-    background-size: cover;
-    width: 100%;
-    display: block;
-    position: fixed;
-    overflow: visible;
-  }
 }

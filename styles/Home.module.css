@@ -1,16 +1,19 @@
 .gridcontainer {
   display: grid;
-  padding: 0%;
-  margin: 0%;
+  align-items: center;
+  margin-top: 10%;
+margin-left: 0%;
+margin-right: 0%;
   width: 100%;
   height: 100%;
   gap: 2%;
 }
 
 .thistitle {
-    font-size: 200px;
+    font-size: 100px;
+    align-items: center;
     position: relative;
-    display: flex;
+    display: inline-block;
     margin: 0%;
     color: black;
     font-weight: lighter;
