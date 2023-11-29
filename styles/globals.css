@@ -16,9 +16,6 @@ h1 {
   margin: none;
 }
 
-
-
-
 .page-container {
   position: relative;
   padding-left: 10px;
@@ -34,79 +31,9 @@ h1 {
 }
 
 .Navbar {
-  height: 70px;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
-  margin: auto;
-  flex-direction: column;
-  overflow: hidden;
-  align-items: center;
-  background: transparent;
-}
-
-.Navbar li {
-  font-size: 2.5em;
-  list-style-type: none;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 0 60px;
-}
-
-.Navbar li a {
-  color: black;
-  font-style: normal;
-  text-decoration: none;
-  transition: color 500ms;
-}
-
-.Navbar li > a:hover {
-  color: gold;
-}
-
-
-.Navbar > .nav-items > a {
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  float: none;
-  color: blue;
-  text-decoration: none;
-  margin: 15px;
-  position: relative;
-  opacity: 0.9;
-  transform: color 500ms;
-}
-
-.Navbar > .nav-items > a:hover {
-  opacity: 1;
-}
-
-
-.Navbar > .nav-items > a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: blue;
-  transition: all 0.45s;
-}
-
-.Navbar > .nav-items > a:hover::before {
-  width: 100%;
-}
-
-
-
-.Navbar > .nav-toggle {
   display: none;
+  
 }
-
 
 .Footer {
   position: absolute;

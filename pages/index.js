@@ -11,6 +11,8 @@ export default function Home() {
 
      <div className={styles.gridcontainer}>
           <h1 className={styles.thistitle}>Mapi Tarot Reading</h1>
+          <button>English</button>
+            <button>Español</button>
       </div>
     
       
