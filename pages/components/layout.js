@@ -1,5 +1,4 @@
 import Footer from "./footer";
-import Image from 'next/image';
 import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {

@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import React from 'react'
+import Engcard from './components/Engcard'
+import Espcard from './components/Espcard'
 
 export default function Home() {
   return (
@@ -11,8 +14,10 @@ export default function Home() {
 
      <div className={styles.gridcontainer}>
           <h1 className={styles.thistitle}>Mapi Tarot Reading</h1>
-          <button>English</button>
-            <button>Español</button>
+          <div className="buttoncontainer">
+            <Engcard />
+              <Espcard />
+          </div>
       </div>
     
       

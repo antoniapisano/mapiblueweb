@@ -20,6 +20,14 @@ margin-right: 0%;
   text-align: center;
 }
 
+.english {
+  background-color: gold;
+}
+
+.spanish {
+  background-color: gold;
+}
+
 @media (max-width: 1020) {
 
   
