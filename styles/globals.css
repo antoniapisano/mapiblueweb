@@ -3,26 +3,20 @@
   box-sizing: border-box;
 }
 
+@keyframes background {
+  from {background-color: dodgerblue;}
+  to {background-color: blueviolet;}
+}
+
 body {
   margin: 0;
   padding: 0;
   align-items: center;
-  background-color: dodgerblue
-}
-
-.buttoncontainer {
-  margin-left: 20%;
-  margin-right: 10%;
-  display: inline-block;
-  align-items: center;
-}
-
-button {
-  width: 200px;
-  height: 60px;
-  background-color: gold;
-  margin-left: 10%;
-  margin-right: 10%;
+  background-color: dodgerblue;
+  animation-name: background;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 h1 {
