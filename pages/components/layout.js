@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <div className="page-container" >
          <video
-                src="/firefly.mp4"
+                src="/tarotcards.mp4"
                 type="video/mp4"
                 autoPlay
                 muted
