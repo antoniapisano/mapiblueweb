@@ -2,23 +2,9 @@ import { Suspense } from "react";
 
 const indexesp = () => {
     return ( 
-        <Suspense fallback={<h1>Loading...</h1>}><h1>Spanish page</h1>
-            </Suspense>
-
-        
-        
+    <h1>Spanish page</h1>   
      );
 }
  
 export default indexesp;
 
-export async function getServerSideProps() {
-    await new Promise((resolve) => {
-      setTimeout(resolve, 2000);
-    });
-  
-    return {
-      props: {},
-    }
-  }
-  
